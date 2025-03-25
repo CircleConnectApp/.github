@@ -40,4 +40,41 @@ CircleConnect is a scalable microservices-based social platform enabling communi
 - Redis
 - Python
 - Java
-- GoLang 
+- GoLang
+
+
+## 👥 Development Team
+<p align="center">
+  <table align="center">
+    <tr>
+      <th align="center">Co-Developer</th>
+      <th align="center">Lead Developer</th>
+      <th align="center">DevOps Engineer</th>
+      <th align="center">Technical Architect</th>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://avatars.githubusercontent.com/u/148449014?s=100" width="100"><br>
+        @HaneenMohamed
+      </td>
+            <td align="center">
+        <img src="https://github.com/Mustafa.png" width="100"><br>
+        @Mustafa
+      </td>
+      <td align="center">
+        <img src="https://avatars.githubusercontent.com/u/121519896?s=100" width="100"><br>
+        @yehiahesham2938
+      </td>
+      <td align="center">
+        <img src="https://github.com/Yasmine.png" width="100"><br>
+        @Yasmine
+      </td>
+    </tr>
+    <tr>
+      <td align="center">Full-stack development</td>
+      <td align="center">Infrastructure & deployment<br>Full-stack development</td>
+      <td align="center">Infrastructure & deployment<br>Full-stack development</td>
+      <td align="center">ADR reports<br>Code contributions</td>
+    </tr>
+  </table>
+</p>
