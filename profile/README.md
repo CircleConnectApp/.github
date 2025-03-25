@@ -22,3 +22,22 @@ CircleConnect is a scalable microservices-based social platform enabling communi
   - Post creation and interactions
   - 24-hour ephemeral stories
 - **Real-time Notifications**
+
+## 🏗 System Architecture
+### Key Components
+- **Microservices**: 6 independent services (Auth, Communities, Posts, Stories, Notifications, Admin)
+- **API Gateway**: Gateway for request routing
+- **Database**: MongoDB with sharding for scalability
+- **Cache**: Redis for session management
+- **Message Broker**: Kafka for event-driven notifications
+- **Auth**: Google OAuth2 with JWT
+
+## 🛠️ Core Technologies
+**Backend:**
+- Node.js
+- Express
+- MongoDB
+- Redis
+- Python
+- Java
+- GoLang 
