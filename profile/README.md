@@ -9,40 +9,68 @@
 🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 -->
 
-# CircleConnect - Social Networking Platform
+# CircleConnect - Social Networking Platform  
 
-## Project Overview
-CircleConnect is a scalable microservices-based social platform enabling community interactions, post sharing, and real-time notifications. Developed for SW Architecture and Design (Spring 2025).
+## Project Overview  
+CircleConnect is a scalable microservices-based social platform enabling community interactions, post sharing, and real-time notifications. Developed for SW Architecture and Design (Spring 2025).  
 
-## Features
-### Core Functionality
-- **Google OAuth2 Authentication**
-- **Community Management**
-  - Create/join communities (Admin restricted)
-  - Post creation and interactions
-  - 24-hour ephemeral stories
-- **Real-time Notifications**
+## Features  
+### Core Functionality  
+- **Google OAuth2 Authentication with JWT**  
+- **Role-based Access Control** (User, Admin)  
+- **Community Management**  
+  - Create/join communities (Admin restricted)  
+  - Post creation and interactions (like, edit, delete)  
+  - 24-hour ephemeral stories  
+- **Personalized Feed** with recommendation system  
+- **Search Service** for platform-wide content discovery  
+- **Real-time Notifications**  
+- **Admin Moderation Tools**  
 
-## 🏗 System Architecture
-### Key Components
-- **Microservices**: 6 independent services (Auth, Communities, Posts, Stories, Notifications, Admin)
-- **API Gateway**: Gateway for request routing
-- **Database**: MongoDB with sharding for scalability
-- **Cache**: Redis for session management
-- **Message Broker**: Kafka for event-driven notifications
-- **Auth**: Google OAuth2 with JWT
+## System Architecture  
 
-## 🛠️ Core Technologies
-**Backend:**
-- Node.js
-- Express
-- MongoDB
-- Redis
-- Python
-- Java
-- GoLang
+### Key Components  
+#### Microservices Architecture:  
+| Service | Technology |  
+|---------|------------|  
+| Authentication | Python/FastAPI |  
+| User | Go/Gin |  
+| Community | Node.js/Express |  
+| Post | Go/Gin |  
+| Story | Node.js |  
+| Feed | Go/Gin |  
+| Search | Go/Gin |  
+| Admin | Node.js |  
+| Notification | Node.js |  
 
+#### Data Layer:  
+- **PostgreSQL/MySQL** for structured data (User Management, Auth)  
+- **MongoDB** for unstructured content (Posts, Stories)  
 
+#### Infrastructure:  
+- **API Gateway**: Single entry point  
+- **Cache**: Redis (multi-layer)  
+- **Message Broker**: Kafka/RabbitMQ  
+- **Resilience**: Circuit breakers, retries, fallbacks  
+
+## Core Technologies  
+
+### Backend:  
+- **Node.js** (Express)  
+- **Go** (Gin)  
+- **Python** (FastAPI)  
+- **PostgreSQL/MySQL**  
+- **MongoDB**  
+- **Redis**  
+- **Kafka/RabbitMQ**  
+
+### Security:  
+- Google OAuth2  
+- JWT Authentication  
+- HTTPS  
+- Rate Limiting  
+- OWASP Compliance
+  
 ## 👥 Development Team
 <p align="center">
   <table align="center">
